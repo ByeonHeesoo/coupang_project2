@@ -1,0 +1,140 @@
+/* 오늘의 쇼핑 제안 */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.wrap {
+  margin: 0 auto;
+  width: 1022px;
+  margin-top: 100px;
+}
+
+
+/* 헤더영역 */
+.header img {
+  width: 176px;
+  height: 40px;
+}
+
+
+
+/* 섹션영역 */
+.container {
+  margin-top: 48px;
+  width: 1022px;
+}
+
+.icon {
+  display: inline-block;
+  background: url('../../assets/icon/shopping.svg') no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.today_shopping {
+  width: 168px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+
+.today_shopping_container h3 {
+  display: flex;
+  align-items: center;
+}
+
+/* 아이템 영역 */
+.item_container {
+  width: 1020px;
+  height: 270px;
+  margin-top: 24px;
+}
+
+.item_container .item {
+  display: flex;
+  gap: 5px;
+}
+
+.item_container .item li {
+  position: relative;
+  width: 200px;
+  height: 270px;
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+}
+
+.item_container .item .img {
+  display: block;
+  margin: 0 auto;
+}
+
+.item_container .item li .sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 3px 10px;
+  width: 53px;
+  height: 30px;
+  background-color: var(--color-red-500);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0px 0px 4px 0px;
+  z-index: 1;
+}
+
+.item_container li span {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-back);
+}
+
+.item_container li .title {
+  margin: 12px 0;
+}
+
+.item_container li .title+.star_review {
+  margin-top: 8px;
+}
+
+.item_container .item div span:nth-child(1),
+.item_container .item div .shipping {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.item_container li .star_review {
+  display: flex;
+  align-items: center;
+}
+
+.item_container li span.review,
+.item_container .item .free {
+  color: var(--color-gray-700);
+}
+
+.star {
+  background-image: url('../../assets/sprites/rating-stars.png');
+  width: 68px;
+  height: 12px;
+  background-size: cover;
+}
+
+.star.type01 {
+  background-position: top -126px left 0;
+}
+
+.star.type02 {
+  background-position: top -112px left 0;
+}
+
+.star.type03 {
+  background-position: top -140px left 0;
+}
